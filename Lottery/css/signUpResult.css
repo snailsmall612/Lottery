@@ -1,0 +1,14 @@
+.success{
+	position: absolute;
+	top:44%;
+	left:45%;
+	font-size: 25pt;
+	color: rgb(73, 73, 223);
+}
+.fail{
+	position: absolute;
+	top:44%;
+	left:32%;
+	font-size: 25pt;
+	color: rgb(232, 26, 26);
+}

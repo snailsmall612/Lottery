@@ -1,0 +1,183 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: 0;
+}
+.Layout_header {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 5px;
+    text-align: center;
+    height: 190px;
+    background: rgba(148, 220, 255, 0.3);
+    <!--[if IE]> background: transparent;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#3094DCFF, endColorstr=#3094DCFF);
+    /*30=>透明度0.3  94DCFF=>#94DCFF */
+    
+    zoom: 1;
+    <![endif]-->
+}
+.Layout_center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:17px;
+    width: 1000px;
+    min-height: 500px;
+    background: #ffffff;
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(47%, #f6f6f6), color-stop(100%, #ededed));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    /* IE10+ */
+    
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+    /* W3C */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+    /* IE6-9 */
+}
+.Layout_bottom {
+    background-color: rgb(245, 207, 191);
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+}
+.Layout_bottom div {
+    font-size: 10pt;
+    font-family: 'Fredericka the Great', cursive;
+}
+.signup_btn {
+    color: #f4f4f4;
+    background: #4aaaa5;
+    padding: 8px 18px 8px 18px;
+    border-radius: 2px;
+    text-decoration: none;
+    position: absolute;
+    left: 83%;
+    top: 85px;
+    cursor: pointer;
+}
+.login_btn {
+    color: #f4f4f4;
+    background: #4aaaa5;
+    padding: 8px 18px 8px 18px;
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.signup_btn:hover, .login_btn:hover {
+    text-shadow: 0px 0px 0.01px #fff, 0px 0px 0.01px #fff, 0px 0px 0.01px #fff, 0px 0px 0.01px #fff, 0px 0px 0.01px #fff, 0px 0px 0.01px #fff, 0px 0px 0.01px #fff;
+}
+.signup_btn:active {
+    margin-top: 2px;
+}
+.login_div {
+    position: absolute;
+    left: 85%;
+    top: 93px;
+    width: 200px;
+}
+#login {
+    position: relative;
+    left: 0px;
+    top: 10px;
+    display: none;
+    z-index: 1;
+}
+#triangle {
+    width: 0;
+    border-top: 12x solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #7B93AB;
+    border-left: 12px solid transparent;
+    margin: 0 auto;
+}
+#login h1 {
+    font-family: 'Bangers', cursive;
+    background: #7B93AB;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+#login #login_block {
+    padding: 6% 4%;
+    background: #ffffff;
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e5e5e5));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    /* IE10+ */
+    
+    background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+    /* W3C */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0);
+    /* IE6-9 */
+}
+#login input[type="text"], #login input[type="password"] {
+    background: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 4%;
+    color: #555;
+    width: 90%;
+}
+#login input[type="button"] {
+    width: 100%;
+    background: #414445;
+    border: 0;
+    padding: 4%;
+    font-size: 100%;
+    color: #fff;
+    cursor: pointer;
+    transition: background .8s;
+    -webkit-transition: background .8s;
+    -moz-transition: background .8s;
+}
+#login input[type="button"]:hover {
+    background: #2288bb;
+}
+#login input[type="button"]:active {
+    position: relative;
+    top: 1px;
+}
+#login_error_msg {
+    margin-top: 10px;
+    color: red;
+}
+#login_info {
+    position: absolute;
+    left: 87%;
+    top: 20px;
+}
